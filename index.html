@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./img/icon.png"/>
+    <title>Межгороднее такси в Алматы: Быстро и Без Ожиданий в Село Чунджа и Горячие Источники</title>
+	<meta name="description" content="Путешествуйте между городами без ожиданий с нашим межгородним такси. Быстро и удобно достигайте пунктов назначения в Алматы, Село Чунджа и к горячим источникам. Закажите сейчас!" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script type="text/javascript" src="./js/language.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="head-img" src="./img/img.jpg">
+            <div class="language">
+                <button class="language-rus" onclick="setLanguage('ru')">РУС</button>
+                <button class="language-kaz" onclick="setLanguage('kz')">ҚАЗ</button>
+            </div>
+            <div class="title">
+                <h4 class="hello" id="hello-text">Добро пожаловать!</h4>
+                <h6 class="text" id="text-text">Для заказа междугородней поездки,<br>пожалуйста, заполните форму ниже:</h6>
+            </div>
+            <div class="form">
+                <form action="server.php" method="POST" class="form-example">
+                    <div class="form-example">
+                        <label for="where-1" id="from-label">Откуда:</label>
+                        <input type="text" name="where-1" id="where-1" required placeholder="Чунджа">
+                    </div>
+                    <div class="form-example">
+                        <label for="address-1" id="address1-label">Адрес:</label>
+                        <input type="text" name="address-1" id="address-1" required placeholder="Абая, 56">
+                    </div>
+                    <div class="form-example">
+                        <label for="where-2" id="to-label">Куда:</label>
+                        <input type="text" name="where-2" id="where-2" required placeholder="Алматы">
+                    </div>
+                    <div class="form-example">
+                        <label for="address-2" id="address2-label">Адрес:</label>
+                        <input type="text" name="address-2" id="address-2" required placeholder="Жарокова, 97">
+                    </div>
+                    <div class="form-example">
+                        <label for="passengers" id="passengers-label">Количество пассажиров:</label>
+                        <input type="text" name="passengers" id="passengers" required placeholder=" 1">
+                    </div>
+                    <div class="form-example">
+                        <label for="luggage" id="luggage-label">Багаж:</label>
+                        <input type="text" name="luggage" id="luggage" placeholder="Сумка">
+                    </div>
+                    <div class="form-example">
+                        <label for="phone" id="phone-label">Телефон номер:</label>
+                        <input type="tel" name="phone" id="phone" required placeholder="87479995520">
+                    </div>
+                    <div class="form-example">
+                        <label for="Date" id="date-label">Дата:</label>
+                        <input type="date" id="date" name="date" required><br>
+                    </div>
+                    <div class="form-example">
+                        <label for="time" id="time-label">Время:</label>
+                        <select id="time" name="time" required>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:00">12:00</option>
+                            <option value="11:00">14:00</option>
+                            <option value="11:00">15:00</option>
+                        </select><br>
+                    </div>
+                    <div class="form-example">
+                        <input class="button" type="submit" id="zakaz" value="ЗАКАЗАТЬ" />
+                    </div>
+                </form>
+                <!-- <div class="play_market">
+                    <img class="play" src="./img/play.svg">
+                    <img class="phone" src="./img/phone.svg">
+                </div> -->
+                <div class="dowd">
+                    <a href="#"><img class="img-dowd" src="./img/dowd.svg"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>
